@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D85C5"
+    tools:context=".ApplicantProfile">
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="401dp"
+        android:text="Phone:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="547dp"
+        android:text="Name:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="505dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="474dp"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="433dp"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="93dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="327dp"
+        android:text="Address:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="287dp"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="269dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="360dp"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/buttonNewBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="189dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/newbio" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/white"
+        android:textColor="#2D85C5"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="31dp"
+        android:text="Back" />
+
+    <ImageButton
+        android:id="@+id/buttonEditBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="120dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/editbio" />
+
+
+</RelativeLayout>

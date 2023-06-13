@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2"
+    tools:context=".ApplicantSearchFragment">
+
+    <ImageView
+        android:id="@+id/LookJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="507dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/lookingjob" />
+
+    <ImageButton
+        android:id="@+id/ClickHere1"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="419dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/clickhere" />
+
+    <ImageView
+        android:id="@+id/Hisotry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="332dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/history" />
+
+    <ImageButton
+        android:id="@+id/ClickHere3"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="246dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/clickhere" />
+
+    <ImageView
+        android:id="@+id/Mailbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="383dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="164dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/mailbox" />
+
+    <ImageButton
+        android:id="@+id/ClickHere2"
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="438dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/clickhere" />
+
+
+</RelativeLayout>

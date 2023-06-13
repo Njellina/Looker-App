@@ -1,0 +1,139 @@
+package com.example.projectapp;
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CompanyViewJob extends AppCompatActivity {
+    private DatabaseJava db;
+    MyAdapter3 adapter;
+    RecyclerView recyclerView;
+    ArrayList<String> id, category, city, description, salary;
+    private ImageButton accept, delete, edit;
+    private EditText textID;
+    private String ID;
+    private String email, nama, kategori, kota, desc, gaji;
+    private int sal;
+
+    @SuppressLint({"RestrictedApi", "WrongViewCast"})
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.companyjobrecycle);
+        db = new DatabaseJava(this);
+        id = new ArrayList<>();
+        category = new ArrayList<>();
+        city = new ArrayList<>();
+        description = new ArrayList<>();
+        salary = new ArrayList<>();
+
+        textID = findViewById(R.id.textID);
+        accept = (ImageButton) findViewById(R.id.buttonAccept);
+        delete = (ImageButton) findViewById(R.id.buttonDelete);
+        edit = (ImageButton) findViewById(R.id.buttonEdit);
+
+        recyclerView = findViewById(R.id.recyclerview);
+        adapter = new MyAdapter3(this, id, category, city, description, salary);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        displaydata();
+
+        Bundle loginn = this.getIntent().getExtras();
+        if(loginn != null){
+            String name = (String) loginn.get("name");
+//            Intent View = new Intent(this, CompanyViewJob.class);
+//            View.putExtra("name", name);
+
+            accept.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ID = textID.getText().toString();
+
+                    if (ID.isEmpty()){
+                        Toast.makeText(getApplicationContext(), "Field Cannot be Empty", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Boolean checkuserpass = db.checkJobID(ID, name);
+                        if (checkuserpass == true){
+                            Cursor cursor = db.searchJobtoClosedJob(ID);
+                            if (cursor.moveToFirst()){
+                                email = (cursor.getString(0));
+                                nama = (cursor.getString(1));
+                                kategori = (cursor.getString(2));
+                                kota = (cursor.getString(3));
+                                desc = (cursor.getString(4));
+                                gaji = (cursor.getString(5));
+                            }
+                            sal = Integer.parseInt(gaji);
+                            db.insertDataClosedJobs(email, nama, kategori, kota, desc, sal);
+                            db.deleteDataJobs(ID);
+                            Toast.makeText(getApplicationContext(), "Data Moved Successful!", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), CompanyMain.class));
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+            });
+
+            delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ID = textID.getText().toString();
+
+                    if (ID.isEmpty()){
+                        Toast.makeText(getApplicationContext(), "Field Cannot be Empty", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Boolean checkuserpass = db.checkJobID(ID, name);
+                        if (checkuserpass == true){
+                            db.deleteDataJobs(ID);
+                            Toast.makeText(getApplicationContext(), "Delete Successful!", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), CompanyMain.class));
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+            });
+
+            edit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(getApplicationContext(), CompanyEditJob.class));
+                }
+            });
+
+        }
+    }
+
+    private void displaydata(){
+        Bundle loginn = this.getIntent().getExtras();
+        String name = (String) loginn.get("name");
+        Cursor cursor = db.searchJobList(name);
+        if (cursor.getCount()==0){
+            Toast.makeText(CompanyViewJob.this, "No Information can be shown!", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            while(cursor.moveToNext()){
+                id.add(cursor.getString(0));
+                category.add(cursor.getString(1));
+                city.add(cursor.getString(2));
+                description.add(cursor.getString(3));
+                salary.add(cursor.getString(4));
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2"
+    tools:context=".AdminHomeFragment">
+
+    <ImageButton
+        android:id="@+id/ApplicantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="453dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/adminapplicant" />
+
+    <ImageButton
+        android:id="@+id/CompanyButton"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="258dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/admincompany" />
+
+    <ImageButton
+        android:id="@+id/deleteallcompanyButton"
+        android:layout_width="170dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="122dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/deleteallcompany" />
+
+    <ImageButton
+        android:id="@+id/deleteallapplicantButton"
+        android:layout_width="170dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginBottom="122dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/deleteallapplicant" />
+
+    <ImageButton
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="12dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/logout" />
+
+
+</RelativeLayout>

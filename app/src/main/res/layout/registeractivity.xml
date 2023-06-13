@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D85C5"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/registerpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        app:srcCompat="@drawable/registerpage"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="45dp"
+        android:src="@drawable/logo"
+        />
+
+    <ImageView
+        android:id="@+id/registeras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="45dp"
+        app:srcCompat="@drawable/registeras"
+        />
+
+    <ImageButton
+        android:id="@+id/applicant"
+        android:layout_width="261dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="206dp"
+        app:srcCompat="@drawable/applicant"
+        />
+
+    <ImageButton
+        android:id="@+id/company"
+        android:layout_width="261dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/company"
+        />
+
+    <ImageButton
+        android:id="@+id/costumersupport"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginEnd="340dp"
+        android:layout_marginBottom="13dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/costumersupport"
+        />
+
+
+</RelativeLayout>

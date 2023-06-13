@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".RegisterApplicant"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".RegisterCompany"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".LoginAdmin"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".LoginApplicant"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".LoginCompany"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantMain"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantHomeFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantSearchFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantResumeFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminMain"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminApplicantList"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminCompanyList"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".MyAdapter"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".MyAdapter1"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".MyAdapter2"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminHomeFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminSearchFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminViewFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminSDCompany"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminSDApplicant"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyMain"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyHomeFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyViewFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantProfile"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyProfile"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyAddJob"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".AdminJobList"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyViewJob"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyEditJob"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantJobSearch"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantJobDesc"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantHistory"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyViewClosedJob"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyViewApplicators"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantMailbox"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantNewBio"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantEditBio"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".CompanyApplicatorDesc"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ApplicantAddCV"
+            android:exported="true">
+
+        </activity>
+
+
+
+    </application>
+
+</manifest>
